@@ -12,15 +12,15 @@ module tb_half_adder;
   initial begin
     A = 1'b0;    // Initialize input A to 0
     B = 1'b0;    // Initialize input B to 0
-    #1;          // Delay for 1 time unit
+    #10;          // Delay for 10 time unit
     
     A = 1'b0;    // Change input A to 0
     B = 1'b1;    // Change input B to 1
-    #1;          // Delay for 1 time unit
+    #10;          // Delay for 10 time unit
     
     A = 1'b1;    // Change input A to 1
     B = 1'b0;    // Change input B to 0
-    #1;          // Delay for 1 time unit
+    #10;          // Delay for 10 time unit
     
     A = 1'b1;    // Change input A to 1
     B = 1'b1;    // Change input B to 1
