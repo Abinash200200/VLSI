@@ -38,7 +38,7 @@ module Binary_to_Gray_tb;
   
     // Display block for monitoring input and output
     always @* begin
-      $monitor("$time=%0t , input=%0[3:0]b , output=%0 [3:0]b", $time, input, output);
+        $monitor("$time=%0t , b=%0[3:0]b , g=%0[3:0]b", $time, b, g);
     end
 
 endmodule
