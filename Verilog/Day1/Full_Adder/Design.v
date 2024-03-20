@@ -1,13 +1,13 @@
 module full_adder (
-    input A,         // Input A
-    input B,         // Input B
-    input Cin,       // Input Carry-in
-    output Sum,      // Output Sum
-    output Cout      // Output Carry-out
+    input a,         // Input A
+    input b,         // Input B
+    input cin,       // Input Carry-in
+    output sum,      // Output Sum
+    output cout      // Output Carry-out
 );
 
-assign Sum = A ^ B ^ Cin;                    // Calculate Sum
-assign Cout = (A & B) | (B & Cin) | (A & Cin);  // Calculate Carry-out
+assign sum = a ^ b ^ cin;                    // Calculate Sum
+assign cout = (a & b) | (b & cin) | (a & cin);  // Calculate Carry-out
 
 endmodule
 
